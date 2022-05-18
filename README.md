@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Simple example of setting up NetlifyCMS on Create-React-App without routes
 
+Open source content management for your Git workflow
+
+
+![alt text](app.png "app")
+
 
 ## Available Scripts
 
