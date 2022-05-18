@@ -22,7 +22,7 @@ const PostList = () => {
                             </div>
                             <small>Published on {post.date} by {post.author}</small>
                             <hr/>
-                            <Markdown source={excerptList[i]} escapeHtml={false}  children={}/>
+                            <Markdown source={excerptList[i]} escapeHtml={false}/>
                             <small><Link className="links" to={`/post/${post.id}`}>Read more</Link></small>
                         </div>
                     )
