@@ -1,9 +1,9 @@
 import React from "react"
 import { Redirect } from "react-router-dom"
-import Markdown from "react-markdown"
 import Layout from "../components/layout"
 import postlist from "../posts.json"
 import "./pages.css"
+import ReactMarkdown from 'markdown-to-jsx';
 
 const Post = (props) => {
     const validId = parseInt(props.match.params.id)
@@ -30,7 +30,8 @@ const Post = (props) => {
                 <h2>{fetchedPost.title}</h2>
                 <small>Published on {fetchedPost.date} by {fetchedPost.author}</small>
                 <hr/>
-                <Markdown source={fetchedPost.content} escapeHtml={false} />
+                <ReactMarkdown children={fetchedPost.content}></ReactMarkdown>
+
             </div>
         </Layout>
     )
