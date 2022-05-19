@@ -31,7 +31,7 @@ to new post
 
 ## npm package 
 
-### `react-markdown`
+### `markdown-to-jsx`
 
 ### `typeface-raleway`
 

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link }  from "react-router-dom"
-import Markdown from "react-markdown"
 import postlist from "../posts.json"
 
 import "./components.css"
+import ReactMarkdown from "markdown-to-jsx";
 
 const PostList = () => {
     const excerptList = postlist.map(post => {
@@ -22,7 +22,7 @@ const PostList = () => {
                             </div>
                             <small>Published on {post.date} by {post.author}</small>
                             <hr/>
-                            <Markdown source={excerptList[i]} escapeHtml={false}/>
+                            <ReactMarkdown children={excerptList[i]}></ReactMarkdown>
                             <small><Link className="links" to={`/post/${post.id}`}>Read more</Link></small>
                         </div>
                     )
