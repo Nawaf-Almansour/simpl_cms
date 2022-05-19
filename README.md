@@ -1,5 +1,6 @@
 # simple CMS App
 
+## [simplecms.netlify](https://simplecms.netlify.app)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Simple example of setting up NetlifyCMS on Create-React-App without routes
